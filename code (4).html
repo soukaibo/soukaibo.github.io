@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+ нормальное для всех.
+    <title>Google I/O 大会主要内容摘要</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .announcement-item { margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px; padding: 15px; }
+        .announcement-item h2 { margin-top: 0; color: #0057e7; font-size: 1.5em; }
+        .announcement-item h3 { color: #1a73e8; font-size: 1.2em; margin-top: 10px; }
+        .toggle-button {
+            background-color: #4285f4; color: white; border: none; padding: 8px 12px;
+            text-align: center; text-decoration: none; display: inline-block;
+            font-size: 14px; margin-top: 10px; cursor: pointer; border-radius: 4px;
+        }
+        .toggle-button:hover { background-color: #357ae8; }
+        .details-content { display: none; margin-top: 10px; padding-left: 20px; border-left: 3px solid #eee; }
+        .details-content ul { list-style-type: disc; padding-left: 20px; }
+        .details-content li { margin-bottom: 5px; }
+        .highlight { color: #db4437; font-weight: bold; }
+        .tech-term { font-style: italic; color: #0f9d58; }
+        .speaker-note { font-style: italic; color: #777; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Google I/O 大会主要内容摘要</h1>
+    <p class="speaker-note">Sundar Pichai 开场，开玩笑说每天都是 Gemini 季节。</p>
+
+    <div class="announcement-item">
+        <h2>Ironwood <span class="tech-term">TPU</span></h2>
+        <p>介绍了 Google 最新的 <span class="tech-term">Tensor Processing Unit (TPU)</span>。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>第七代 <span class="tech-term">TPU</span>，名为 Ironwood。</li>
+                <li>性能比上一代提升了 <span class="highlight">10倍</span>。</li>
+                <li>每 <span class="tech-term">pod</span> 算力达到 <span class="highlight">42.5 exaFLOPS</span>。</li>
+                <li>将于今年晚些时候向 Google Cloud 客户提供。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Google Beam (源自 Project Starline)</h2>
+        <p>推出了一款新的 <span class="tech-term">AI-first</span> 视频通讯平台。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>基于 Project Starline 技术。</li>
+                <li>配备6个摄像头从不同角度捕捉用户。</li>
+                <li>使用 <span class="tech-term">AI</span> 将视频流融合并在 <span class_name="tech-term">3D light field display</span> 上渲染用户。</li>
+                <li>具有近乎完美的头部追踪，精确到毫米级，<span class="highlight">每秒60帧</span> 实时运行。</li>
+                <li>与 HP 合作，首批 Google Beam 设备将于今年晚些时候向早期客户提供。</li>
+                <li>Starline 的底层技术也被引入 Google Meet。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Google Meet <span class="tech-term">实时语音翻译</span></h2>
+        <p>增强了 Google Meet 的通讯能力。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+ нормальное для всех.
+        <div class="details-content">
+            <ul>
+                <li>由 <span class="tech-term">Gemini</span> 驱动的实时语音翻译功能，旨在打破语言障碍。</li>
+                <li>目前为订阅用户提供英语和西班牙语翻译。</li>
+                <li>未来几周将推出更多语言。</li>
+                <li>企业版将于今年晚些时候推出。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Gemini Live (源自 Project Astra)</h2>
+        <p>展示了下一代 <span class="tech-term">AI</span> 助手的能力。</p>
+        <button class
+normal
+="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>Project Astra 的摄像头和屏幕共享功能，让你可以讨论你看到的任何事物。</li>
+                <li>展示了其识别和响应视觉信息的能力（例如，将垃圾车误认为敞篷车，识别路灯和影子）。</li>
+                <li>今天开始在 Android 和 iOS 上的 Gemini 应用中推出。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Project Mariner</h2>
+        <p>一款能够与网络交互并完成任务的 <span class="tech-term">AI agent</span>。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>引入了多任务处理，现在可以同时监管多达 <span class="highlight">10个</span> 任务。</li>
+                <li>具备“示教与重复 (Teach and Repeat)”功能：你只需演示一次任务，它就能学会并为未来类似任务制定计划。</li>
+                <li>Project Mariner 的计算机使用能力将通过 <span class="tech-term">Gemini API</span> 提供给开发者。</li>
+                <li>将于今年夏天更广泛地推出，并与 Anthropic 的 <span class_name="tech-term">Model Context Protocol (MCP)</span> 工具兼容。</li>
+                <li><span class="tech-term">Agentic capabilities</span> 将引入 Chrome、Search 和 Gemini app。</li>
+                <li>Gemini app 中的 <span class="tech-term">Agent Mode</span> (实验性)：例如，帮助寻找公寓，可以浏览 Zillow 等网站，根据标准筛选，并使用 Project Mariner 调整特定筛选条件，甚至安排看房。即将向订阅用户推出。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Gemini <span class="tech-term">个性化</span></h2>
+        <p>通过个人上下文增强 <span class="tech-term">AI</span> 体验。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>引入“个人上下文 (Personal context)”概念。</li>
+                <li>经用户许可，<span class="tech-term">Gemini models</span> 可以使用来自用户 Google 应用的相关上下文信息。</li>
+                <li>此过程是私密的、透明的，并完全由用户控制。</li>
+                <li>Gmail 中的个性化智能回复：<span class="tech-term">Gemini</span> 可以分析邮件内容、参考 Google Drive 中的笔记、扫描过去的邮件以获取预订信息和 Google Docs 中的行程，然后匹配用户典型的问候语、语气、风格和常用词汇，自动生成回复。此功能将于今年夏天向 Gmail 订阅用户推出。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Gemini 2.5 Pro & Gemini 2.5 Flash</h2>
+        <p>更新了 Google 的 <span class="tech-term">large language models (LLMs)</span>。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>Gemini 2.5 Pro：在所有 <span class="tech-term">LMArena</span> 排行榜上均排名第一。</li>
+                <li>Gemini 2.5 Flash：Google 最高效的主力模型。
+                    <ul>
+                        <li>几乎在所有维度上都有所提升，包括推理、编码和长上下文处理。</li>
+                        <li>将在六月初正式发布，预览版现已在 <span class="tech-term">AI Studio</span>、<span class="tech-term">Vertex AI</span> 和 Gemini app 中可用。</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+     <div class="announcement-item">
+        <h2>Gemini 2.5 <span class="tech-term">原生音频输出</span></h2>
+        <p>为 Gemini 2.5 Flash 和 Pro 预览版引入了新的文本转语音功能。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>首创的多说话人支持（两种声音），基于<span class
+normal
+="tech-term">原生音频输出</span>。</li>
+                <li>能够以更富表现力的方式进行对话，捕捉说话方式的微妙之处，甚至可以无缝切换到耳语。</li>
+                <li>支持超过24种语言，并可在语言间轻松切换。</li>
+                <li>今日起在 <span class="tech-term">Gemini API</span> 中可用。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Gemini 2.5 <span class="tech-term">安全性和工具</span></h2>
+        <p>增强了模型的安全性和开发者工具。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>Gemini 2.5 是迄今为止最安全的模型，加强了对间接提示注入等安全威胁的防护。</li>
+                <li>在 2.5 Pro 和 Flash 中加入了“思考摘要 (Thought Summaries)”功能（通过 <span class="tech-term">Gemini API</span> 和 <span class_name="tech-term">Vertex AI</span>），将模型的原始思考过程整理成清晰的格式。</li>
+                <li>为 2.5 Pro 引入“思考预算 (Thinking Budgets)”（即将推出），让开发者可以控制成本和延迟与质量之间的平衡。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Gemini <span class="tech-term">代码与图像生成</span></h2>
+        <p>提升了编码辅助和图像生成能力。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li><span class="tech-term">代码辅助</span>：演示了使用 2.5 Pro 根据手绘草图生成代码（例如，将2D图像画廊转换为3D球形画廊）。</li>
+                <li>Gemini Diffusion：实验性的<span class="tech-term">文本到图像扩散模型</span>。
+                    <ul>
+                        <li>生成图像的速度比 2.0 Flashlight 快5倍，同时保持其编码性能。</li>
+                        <li>能够解决复杂的数学问题并实时输出。</li>
+                    </ul>
+                </li>
+                <li>Gemini 2.5 Pro 已在您喜爱的 <span class_name="tech-term">IDE</span> 平台（如 Cursor, Bolt, Cline, Cognition, Windsurf, GitHub, Lovable, Replit, Zed Industries）以及 Google 产品（如 Android Studio, Firebase Studio, Gemini Code Assist）和异步编码代理 Jules 中可用。</li>
+                <li>Jules：能够处理大型代码库中的复杂任务，例如在几分钟内升级旧版本的 Node.js。Jules 现已进入公测阶段。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Veo 3 & Imagen 4</h2>
+        <p>推出了先进的视频和图像生成模型。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>Veo 3：Google 最新的<span class="tech-term">文本到视频模型</span>。
+                    <ul>
+                        <li>具备<span class="tech-term">原生音频生成</span>能力，可以生成音效、背景音和对话。</li>
+                        <li>能够理解电影术语，如“延时摄影”或“航拍镜头”。</li>
+                        <li>与导演 Darren Aronofsky 及其叙事公司 Primordial Soup 合作。短片《Ancestral》由 Eliza McNitt 执导。</li>
+                        <li>视频可使用参考图像（角色、场景、风格）来保持一致性。</li>
+                        <li>可使用摄像头控制指令精确指导 Veo。</li>
+                    </ul>
+                </li>
+                <li>Imagen 4：最新且能力最强的图像生成模型，现已整合到 Gemini 应用中。
+                    <ul>
+                        <li>在文本和排版方面表现更佳。</li>
+                        <li>能够做出创造性的选择，例如在字体中使用恐龙骨骼元素。</li>
+                        <li>速度比之前的模型快 <span class="highlight">10倍</span>。</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Flow</h2>
+        <p>一款新的 <span class="tech-term">AI</span> 电影制作工具。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>专为创作者设计。</li>
+                <li>可以上传自己的图像或使用内置的 Imagen 即时生成。</li>
+                <li>能够通过文本提示创建或扩展视频片段。</li>
+                <li>今日推出。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Google AI Pro & Google AI Ultra</h2>
+        <p>新的 <span class="tech-term">AI</span> 订阅计划。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>Google AI Pro（每月19.99美元，全球可用）：
+                    <ul>
+                        <li>Gemini app with 2.5 Pro & Veo 2</li>
+                        <li>Flow with Veo 2</li>
+                        <li>Whisk with Veo 2</li>
+                        <li>NotebookLM with higher limits</li>
+                        <li>Gemini in Gmail, Docs, Vids & more</li>
+                        <li>Gemini in Chrome (美国今日可用)</li>
+                        <li>2TB Storage</li>
+                    </ul>
+
+                </li>
+                <li>Google AI Ultra（每月249.99美元，前3个月半价，美国今日可用，稍后向其他国家推出）：
+                    <ul>
+                        <li>解锁 Google AI 的最高访问级别。</li>
+                        <li>Gemini app with 2.5 Pro Deep Think & Veo 3</li>
+                        <li>Flow with Veo 3</li>
+                        <li>Whisk with highest limits</li>
+                        <li>NotebookLM with highest limits (即将推出)</li>
+                        <li>Gemini in Gmail, Docs, Vids & more</li>
+                        <li>Gemini in Chrome</li>
+                        <li>Project Mariner</li>
+                        <li>YouTube Premium</li>
+                        <li>30TB Storage</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Android XR</h2>
+        <p>Google 的 <span class="tech-term">扩展现实 (XR)</span> 平台。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>专为头戴设备和眼镜设计。</li>
+                <li>三星的 Project Moohan 是首款 Android XR 设备，将于今年晚些时候上市。</li>
+                <li>通过 Google Maps in XR，用户可以瞬移到世界任何地方。</li>
+                <li>能够与 <span class="tech-term">AI assistant</span> 交互，获取关于所见事物的信息，并拉取视频和网站。</li>
+                <li>与 MLB app 集成，提供沉浸式观赛体验。</li>
+                <li>与三星和高通合作构建。</li>
+                <li>Gentle Monster 和 Warby Parker 将成为首批基于 Android XR 构建眼镜的眼镜合作伙伴。开发者将于今年晚些时候开始为眼镜开发应用。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2><span class="tech-term">搜索中的 AI 功能</span></h2>
+        <p>对 Google Search 进行了重大 <span class="tech-term">AI</span> 增强。</p>
+        <button class
+normal
+="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li><span class="tech-term">AI Overviews</span>：已在200多个国家和地区使用。用户反馈积极，搜索频率更高。</li>
+                <li>全新的 <span class="tech-term">AI Mode</span>：完全重塑的搜索体验。
+                    <ul>
+                        <li>支持更长、更复杂的查询（早期测试者查询长度是传统搜索的2-3倍）。</li>
+                        <li>今日起在美国向所有用户推出。</li>
+                        <li><span class="tech-term">Personal context</span>：今年夏天引入 AI Mode，允许连接 Gmail 等其他 Google 应用以提供个性化建议。</li>
+                        <li><span class="tech-term">Deep Search</span>：今年夏天引入 AI Mode，针对复杂主题进行深入分析，创建专家级、完整引用的报告。</li>
+                        <li><span class_name="tech-term">Project Mariner capabilities</span>：今年夏天引入 AI Mode，提供代理能力。</li>
+                        <li><span class="tech-term">Complex analysis & data visualization</span>：今年夏天引入 AI Mode，用于体育和金融查询。</li>
+                    </ul>
+                </li>
+                <li><span class_name="tech-term">Search Live</span>：Project Astra 的实时功能引入 AI Mode，实现与搜索的视频通话式交互。</li>
+                <li><span class_name="tech-term">Visual shopping and agentic checkout</span>：新的视觉购物功能和代理结账功能将于未来几个月推出。用户可以虚拟试穿衣物，搜索功能可以使用 Google Pay 安全购买。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>SynthID</h2>
+        <p>用于检测 <span class="tech-term">AI</span> 生成媒体的水印技术。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>两年前首创，用于在 AI 生成的媒体中嵌入隐形水印。</li>
+                <li>新的 SynthID 检测器可以识别图像、音轨、文本或视频是否包含 SynthID，即使只是部分包含。</li>
+                <li>与 NVIDIA 合作。</li>
+                <li>今日起向早期测试者推出。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Google DeepMind <span class="tech-term">研究项目</span></h2>
+        <p>展示了一系列前沿的 <span class="tech-term">AI</span> 研究成果。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>AlphaProof：能够解决奥林匹克数学竞赛银牌水平的问题。</li>
+                <li>Co-Scientist：能够与研究人员合作，帮助开发和测试新的科学假设。</li>
+                <li>AlphaEvolve：能够发现新的科学知识并加速 <span class_name="tech-term">AI</span> 训练本身。</li>
+                <li>AMIE Medical：一个研究系统，可以帮助临床医生进行医疗诊断。</li>
+                <li>AlphaFold 3：能够预测所有生命分子的结构和相互作用。</li>
+                <li>Isomorphic Labs：基于 AlphaFold 的工作，利用 <span class="tech-term">AI</span> 彻底改变药物发现过程。</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="announcement-item">
+        <h2>Lyria 2</h2>
+        <p>Google 最新的音乐生成模型。</p>
+        <button class="toggle-button" onclick="toggleDetails(this)">查看详情</button>
+        <div class="details-content">
+            <ul>
+                <li>能够生成带人声的高保真音乐。</li>
+                <li>旋律优美，包含独唱和合唱。</li>
+                <li>富有表现力且音质丰富。</li>
+                <li>今日起在 <span class_name="tech-term">Vertex AI</span>、YouTube Shorts 和 Music AI Sandbox 上向企业、YouTube 创作者和音乐家提供。</li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="speaker-note">Sundar Pichai 总结，强调了 Gemini 在各项宣布中的核心作用，并对未来 <span class="tech-term">AI</span> 的机遇表示兴奋。</p>
+
+</div>
+
+<script>
+    function toggleDetails(button) {
+        const content = button.nextElementSibling;
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            button.textContent = "隐藏详情";
+        } else {
+            content.style.display = "none";
+            button.textContent = "查看详情";
+        }
+    }
+</script>
+
+</body>
+</html>
